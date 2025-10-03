@@ -1,0 +1,3 @@
+If users choose “Cancel”, showConfirmDialog returns JOptionPane.CANCEL_OPTION (value = 2, No). If the dialog is closed with X, it returns JOptionPane.CLOSED_OPTION (value = -1).
+
+To customize the options, use JOptionPane.showOptionDialog and provide your own button labels, e.g. new Object[]{"Yes","No"} or new Object[]{"I do","I don't"}.
