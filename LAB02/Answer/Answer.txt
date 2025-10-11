@@ -1,0 +1,5 @@
+The answer is no, Java does not allow you to do this.
+Java distinguishes constructor methods by their signature, which consists of the number and types of their parameters.
++When you create a constructor for a DVD by title, its signature is DigitalVideoDisc(String title).
++When you create a constructor for a DVD by category, its signature is DigitalVideoDisc(String category).
+Even though the parameter names (title and category) are different, they both have the same number of parameters (one) and the same data type (String). Because the signatures are identical, Java cannot tell them apart, leading to a compilation error.
