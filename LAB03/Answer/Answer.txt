@@ -1,0 +1,7 @@
+Java luôn là ngôn ngữ lập trình Truyền bằng Giá trị (Pass by Value).
+
+1. Phương thức swap(): Khi bạn truyền hai đối tượng jungleDVD và cinderellaDVD vào phương thức swap, các tham chiếu gốc không bị hoán đổi. Tiêu đề của chúng vẫn giữ nguyên. Điều này là do Java đã sao chép giá trị của các tham chiếu (địa chỉ bộ nhớ) vào các biến cục bộ o1 và o2 của phương thức swap. Việc hoán đổi chỉ xảy ra trên các bản sao đó.
+
+2. Phương thức changeTitle(): Ngược lại, phương thức này thay đổi được tiêu đề của jungleDVD. Lý do là, mặc dù Java vẫn sao chép giá trị của tham chiếu, bản sao đó vẫn trỏ đến cùng một đối tượng gốc trong bộ nhớ. Do đó, phương thức changeTitle có thể sử dụng bản sao tham chiếu đó để truy cập và sửa đổi thuộc tính (title) của đối tượng gốc.
+
+Việc swap thất bại (không thể thay đổi tham chiếu gốc) trong khi changeTitle thành công (có thể thay đổi nội dung của đối tượng) chính là bằng chứng cho thấy Java là "Truyền bằng Giá trị".
