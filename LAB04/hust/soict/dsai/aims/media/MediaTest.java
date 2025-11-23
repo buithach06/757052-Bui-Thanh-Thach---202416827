@@ -18,7 +18,7 @@ public class MediaTest {
             System.out.println(m.toString());
         }
         
-        System.out.println("\n--- Test Equals ---");
+        System.out.println("\nTest Equals");
         
         DigitalVideoDisc dvd2 = new DigitalVideoDisc(4, "Star Wars", "Difference Category", 100.0f, 90, "Another Director");
         

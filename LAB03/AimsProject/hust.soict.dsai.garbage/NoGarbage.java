@@ -23,7 +23,7 @@ public class NoGarbage {
             String outputString = outputStringBuilder.toString();
             
             endTime = System.currentTimeMillis();
-            System.out.println("--- NoGarbage (using StringBuilder) ---");
+            System.out.println("NoGarbage (using StringBuilder)");
             System.out.println("Read " + inputBytes.length + " bytes.");
             System.out.println("Execution time: " + (endTime - startTime) + " ms");
             

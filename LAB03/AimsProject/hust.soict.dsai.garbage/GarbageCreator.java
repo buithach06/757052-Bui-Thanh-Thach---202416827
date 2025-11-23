@@ -21,7 +21,7 @@ public class GarbageCreator {
             }
             
             endTime = System.currentTimeMillis();
-            System.out.println("--- GarbageCreator (using +) ---");
+            System.out.println("GarbageCreator (using +)");
             System.out.println("Read " + inputBytes.length + " bytes.");
             System.out.println("Execution time: " + (endTime - startTime) + " ms");
             
