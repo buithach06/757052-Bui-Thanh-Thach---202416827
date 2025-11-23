@@ -1,4 +1,4 @@
-package hust.soict.dsai.aims.media;
+package media;
 import java.util.ArrayList;
 import java.util.List;
 

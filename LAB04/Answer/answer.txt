@@ -1,0 +1,20 @@
+1. What class should implement the Comparable interface? 
+The Media class should implement the Comparable<Media> interface. Since Book, DigitalVideoDisc, and CompactDisc all inherit from Media, implementing it in the parent class ensures that all types of media in the cart can be compared against each other .
+
+2. In those classes, how should you implement the compareTo() method be to reflect the ordering that we want? 
+In the Media class, the compareTo(Media other) method should be implemented with the following logic to reflect the default ordering (usually by title, then cost):
++Compare the title of this media with the other media (using String's compareTo).
++If the titles are different, return that result.
++If the titles are the same, compare the cost of the two media (using Float.compare or Double.compare for precision).
+
+3. Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this Comparable interface approach? 
+No. 
+The Comparable interface is designed to define the "natural ordering" of a class, meaning an object can only have one implementation of the compareTo() method. To support multiple different sorting rules simultaneously (switching between title-first and cost-first), you must use the Comparator interface .
+
+4. Suppose the DVDs has a different ordering rule from the other media types, that is by title, then decreasing length, then cost. How would you modify your code to allow this? 
+To allow this, you would override the compareTo() method specifically inside the DigitalVideoDisc class. The logic would be:
++Check if the object being compared against is also a DigitalVideoDisc.
++If it is, compare by title first.
++If titles are equal, compare by length in descending order.
++If lengths are equal, compare by cost.
++If the other object is not a DVD, rely on the general sorting rule defined in the parent Media class.

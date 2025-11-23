@@ -1,5 +1,6 @@
+
 import java.util.ArrayList;
-import hust.soict.dsai.aims.media.Media;
+import media.Media;
 
 public class Store {
     private ArrayList<Media> itemsInStore = new ArrayList<Media>();
@@ -33,5 +34,14 @@ public class Store {
                 System.out.println((i + 1) + ". " + itemsInStore.get(i).toString());
             }
         }
+    }
+
+    public Media findMedia(String title) {
+        for (Media media : itemsInStore) {
+            if (media.getTitle().equalsIgnoreCase(title)) {
+                return media;
+            }
+        }
+        return null;
     }
 }

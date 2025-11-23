@@ -2,11 +2,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import hust.soict.dsai.aims.media.Book;
-import hust.soict.dsai.aims.media.CompactDisc;
-import hust.soict.dsai.aims.media.DigitalVideoDisc;
-import hust.soict.dsai.aims.media.Media;
-import hust.soict.dsai.aims.media.Track;
+import media.Book;
+import media.CompactDisc;
+import media.DigitalVideoDisc;
+import media.Media;
+import media.Track;
 public class TestSort {
 
 	public static void main(String[] args) {
