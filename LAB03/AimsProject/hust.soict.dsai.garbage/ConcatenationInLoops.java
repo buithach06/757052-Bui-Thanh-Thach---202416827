@@ -11,7 +11,7 @@ public class ConcatenationInLoops {
             s += r.nextInt(2);
         }
         long end = System.currentTimeMillis();
-        System.out.println("--- Using String + ---");
+        System.out.println("Using String +");
         System.out.println("Execution time: " + (end - start) + " ms");
 
         r = new Random(123);
@@ -22,7 +22,7 @@ public class ConcatenationInLoops {
         }
         s = sb.toString();
         end = System.currentTimeMillis();
-        System.out.println("\n--- Using StringBuilder ---");
+        System.out.println("\nUsing StringBuilder");
         System.out.println("Execution time: " + (end - start) + " ms"); 
     }
 }
