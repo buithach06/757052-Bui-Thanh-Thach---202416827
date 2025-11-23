@@ -1,4 +1,4 @@
-package hust.soict.dsai.aims.media;
+package media;
 public interface Playable {
     public void play();
 } 

@@ -1,8 +1,13 @@
+
 import java.util.ArrayList;
-import hust.soict.dsai.aims.media.Media;
+import media.Media;
 public class Cart {
     private ArrayList<Media> itemsOrdered = new ArrayList<Media>();
-
+    
+    public ArrayList<Media> getItemsOrdered() {
+        return itemsOrdered;
+    }
+    
     public void addMedia(Media media) {
         if (!itemsOrdered.contains(media)) {
             itemsOrdered.add(media);

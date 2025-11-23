@@ -1,7 +1,12 @@
-package hust.soict.dsai.aims.media;
+
 
 import java.util.ArrayList;
 import java.util.List;
+
+import media.Book;
+import media.CompactDisc;
+import media.DigitalVideoDisc;
+import media.Media;
 
 public class MediaTest {
     public static void main(String[] args) {
