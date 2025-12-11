@@ -1,0 +1,3 @@
+If you do not update the Aims class to catch the PlayerException when calling the play() method:
++ Compilation Error: The Java compiler will fail to build the application. Since PlayerException is a checked exception (inherits from Exception), the compiler forces you to either handle it using a try-catch block or declare it using throws in the calling method.
++ Requirement: To resolve the compilation error, you must wrap the call to media.play() in a try-catch block, allowing the application to gracefully handle errors like "DVD length is non-positive" instead of crashing.
